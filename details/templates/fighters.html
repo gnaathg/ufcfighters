@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main_block %}
+<div class="container mt-5 d-flex justify-content-center">
+    <!-- Centered the form horizontally with `d-flex justify-content-center` -->
+
+    <div class="card p-4 shadow-lg" style="max-width: 600px; width: 100%; border-radius: 10px;">
+        <!-- Wrapped form in a card for a boxed look, added padding and shadow for depth;
+             limited max-width and set rounded corners -->
+        <div>
+            <img src="{% static 'images/logo.png' %}" alt="" width="100px" height="100px">
+            <!-- Removed the extra space -->
+
+            <h2 class="text-center mb-4" style="color: #333;">ADD THE FIGHTER</h2>
+            <!-- Added a heading for better context, with bottom margin and dark color for contrast -->
+        </div>
+
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.as_p }}
+                <!-- Renders each form field with paragraph breaks, keeping spacing uniform -->
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100 mt-3" style="border-radius: 5px;">
+                Submit
+            </button>
+            <!-- Primary button with full width, large size, and top margin -->
+        </form>
+    </div>
+</div>
+{% endblock %}

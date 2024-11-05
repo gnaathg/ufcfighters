@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main_block %}
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Update Your Info</h1>
+    <!-- Centered heading with a primary color and bottom margin for spacing -->
+
+    <div class="card p-4 shadow-lg" style="border-radius: 10px;">
+        <!-- Added a card to encapsulate the form with padding, shadow, and rounded corners -->
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <!-- Rendered form fields with paragraph breaks for spacing -->
+
+            <button type="submit" class="btn btn-success btn-lg w-100 mt-3">
+                Update
+            </button>
+            <!-- Styled submit button with success color, full width, large size, and top margin -->
+        </form>
+    </div>
+</div>
+{% endblock %}

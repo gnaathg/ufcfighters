@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block main_block %}
+<div class="container my-5 d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+        {% if fighter.picture %}
+            <img src="{{ fighter.picture.url }}" class="card-img-top" alt="Fighter Image">
+        {% endif %}
+        
+        <div class="card-body text-center">
+            <h5 class="card-title">{{ fighter.name }}</h5>
+            <p class="card-text">{{ fighter.description }}</p>
+        </div>
+        
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Category:</strong> {{ fighter.category }}</li>
+            <li class="list-group-item"><strong>Record:</strong> {{ fighter.record }}</li>
+            <li class="list-group-item"><strong>Nationality:</strong> {{ fighter.nationality }}</li>
+        </ul>
+        
+        <div class="card-body text-center">
+            <a href="#" class="btn btn-primary btn-sm me-2">View Profile</a>
+            <a href="#" class="btn btn-secondary btn-sm">More Stats</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

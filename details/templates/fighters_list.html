@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block main_block %}
+<div class="container mt-5">
+    <!-- Top margin added to space out the content from the top of the page -->
+
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <h2 class="text-dark">Fighter Details</h2>
+        <!-- Added a distinct color for the heading to make it stand out -->
+
+        <a href="{% url 'fighter-add' %}" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add New Fighter
+        </a>
+        <!-- "Add New Fighter" button styled with a success color and optional icon -->
+    </div>
+
+    <table class="table table-striped table-hover table-bordered align-middle">
+        <!-- Added `table-hover` for row highlighting on hover, and `table-bordered` for better separation of cells;
+             `align-middle` centers content vertically within cells -->
+
+        <thead class="table-dark">
+            <!-- Dark header background for contrast -->
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Gender</th>
+                <th>Blood Type</th>
+                <th>Fighting Style</th>
+                <th>Weight Class</th>
+                <th>Picture</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for f in data %}
+            <tr>
+                <td>{{ f.name }}</td>
+                <td>{{ f.age }}</td>
+                <td>{{ f.country }}</td>
+                <td>{{ f.gender }}</td>
+                <td>{{ f.blood }}</td>
+                <td>{{ f.fighting_style }}</td>
+                <td>{{ f.weight_class }}</td>
+                <td>
+                    {% if f.picture %}
+                    <img src="{{ f.picture.url }}" alt="Fighter Picture" class="img-thumbnail" style="height: 80px; width: auto;">
+                    <!-- Styled picture with a thumbnail border and limited height -->
+                    {% else %}
+                    <span class="text-muted">No Image</span>
+                    <!-- Placeholder text for missing images -->
+                    {% endif %}
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <a href="{% url 'fighter-detail' f.id %}" class="btn btn-dark btn-sm mb-1 text-white">View</a>
+                        <a href="{% url 'fighter-update' f.id %}" class="btn btn-dark btn-sm mb-1">Update</a>
+                        <a href="{% url 'fighter-delete' f.id %}" class="btn btn-dark btn-sm">Delete</a>
+                    </div>
+                    <!-- Styled action links as buttons with individual colors and spacing between each link -->
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

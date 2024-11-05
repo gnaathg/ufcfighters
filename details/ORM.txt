@@ -1,0 +1,116 @@
+(env) C:\Users\SABARI NATH\Desktop\fighters_ops\fighters>python manage.py shell
+Python 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from crm.models import Fighters
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'crm'
+>>> from details.models import Fighters 
+>>> Fighters.objects.create(name="Khabib Nurmagomedov",age=33,country="Republic of Dagestan",gender="Male",blood="A+ve",fighting_style="Sambo",weight_class="midd
+leweight")
+<Fighters: Fighters object (1)>
+>>> Fighters.objects.create(name="Islam Makhachev",age=33,country="Republic of Dagestan",gender="Male",blood="B+ve",fighting_style="Wrestling",weight_class="middleweight")     
+<Fighters: Fighters object (2)>
+>>> Fighters.objects.create(name="Connor Mcgregor",age=32,country="Ireland",gender="Male",blood="O+ve",fighting_style="striker",weight_class="middleweight")     
+<Fighters: Fighters object (3)>
+>>> Fighters.objects.create(name="Francis Ngannou",age=34,country="Cameroon",gender="Male",blood="AB+ve",fighting_style="mma",weight_class="heavyweight")    
+<Fighters: Fighters object (4)>
+>>> Fighters.objects.create(name="Demetreous Jhonson",age=38,country="United States",gender="Male",blood="A+ve",fighting_style="kickboxer",weight_class="featherweight") 
+<Fighters: Fighters object (5)>
+>>> Fighters.objects.create(name="Arman Tsarukyan",age=28,country="Armenia",gender="Male",blood="O-ve",fighting_style="wrestler",weight_class="lightweight")     
+<Fighters: Fighters object (6)>
+>>> Fighters.objects.create(name="Juliana Pena",age=35,country="United States",gender="Female",blood="B-ve",fighting_style="brazilian jiu-jitsu",weight_class="bantamweight")    
+<Fighters: Fighters object (7)>
+>>> Fighters.objects.create(name="Amanda Lourenço Nunes",age=36,country="Brazilian",gender="Female",blood="AB-ve",fighting_style="muay thai",weight_class="bantamweight")              
+<Fighters: Fighters object (8)>
+>>> Fighters.objects.create(name="Holly Rene Holm",age=37,country="United States",gender="Female",blood="O+ve",fighting_style="boxing",weight_class="bantamweight")       
+<Fighters: Fighters object (9)>
+>>> Fighters.objects.create(name="Stipe Miocic", age=41, country="United States", gender="Male", blood="A+ve", fighting_style="boxing", weight_class="heavyweight")
+<Fighters: Fighters object (10)>
+>>> Fighters.objects.create(name="Ciryl Gane", age=33, country="France", gender="Male", blood="AB+ve", fighting_style="Muay Thai", weight_class="heavyweight")
+<Fighters: Fighters object (11)>
+>>> Fighters.objects.create(name="Alexander Volkanovski", age=35, country="Australia", gender="Male", blood="O+ve", fighting_style="striking", weight_class="featherweight")
+<Fighters: Fighters object (12)>
+>>> Fighters.objects.create(name="Max Holloway", age=32, country="United States", gender="Male", blood="B+ve", fighting_style="boxing", weight_class="featherweight")
+<Fighters: Fighters object (13)>
+>>> Fighters.objects.create(name="Yair Rodríguez", age=31, country="Mexico", gender="Male", blood="A+ve", fighting_style="Taekwondo", weight_class="featherweight")
+<Fighters: Fighters object (14)>
+>>> Fighters.objects.create(name="Charles Oliveira", age=34, country="Brazil", gender="Male", blood="B+ve", fighting_style="Brazilian Jiu-Jitsu", weight_class="lightweight")
+<Fighters: Fighters object (15)>
+>>> Fighters.objects.create(name="Dustin Poirier", age=35, country="United States", gender="Male", blood="A-ve", fighting_style="boxing", weight_class="lightweight")
+<Fighters: Fighters object (16)>
+>>> Fighters.objects.create(name="Jon Jones", age=36, country="United States", gender="Male", blood="O+ve", fighting_style="wrestling", weight_class="heavyweight")
+<Fighters: Fighters object (17)>
+>>> Fighters.objects.create(name="Ilia Topuria", age=27, country="Spain", gender="Male", blood="O+ve", fighting_style="Brazilian Jiu-Jitsu", weight_class="featherweight")
+<Fighters: Fighters object (18)>
+>>> Fighters.objects.create(name="Arnold Allen", age=30, country="United Kingdom", gender="Male", blood="A+ve", fighting_style="kickboxing", weight_class="featherweight")
+<Fighters: Fighters object (19)>
+>>> Fighters.objects.create(name="Mateusz Gamrot", age=33, country="Poland", gender="Male", blood="A+ve", fighting_style="wrestling", weight_class="lightweight")
+
+<Fighters: Fighters object (20)>
+>>> Fighters.objects.create(name="Mirsad Bektić", age=32, country="Bosnia and Herzegovina", gender="Male", blood="O+ve", fighting_style="wrestling", weight_class="featherweight")
+<Fighters: Fighters object (21)>
+>>> Fighters.objects.create(name="Hakeem Dawodu", age=32, country="Canada", gender="Male", blood="B+ve", fighting_style="Muay Thai", weight_class="featherweight")
+<Fighters: Fighters object (22)>
+>>> Fighters.objects.create(name="Sodiq Yusuff", age=30, country="Nigeria", gender="Male", blood="O-ve", fighting_style="Muay Thai", weight_class="featherweight")
+<Fighters: Fighters object (23)>
+>>> Fighters.objects.create(name="Diego Ferreira", age=39, country="Brazil", gender="Male", blood="B+ve", fighting_style="Brazilian Jiu-Jitsu", weight_class="lightweight")
+<Fighters: Fighters object (24)>
+>>> Fighters.objects.create(name="Israel Adesanya", age=34, country="Nigeria", gender="Male", blood="O+ve", fighting_style="kickboxing", weight_class="middleweight")
+<Fighters: Fighters object (25)>
+>>> Fighters.objects.create(name="Robert Whittaker", age=33, country="Australia", gender="Male", blood="B+ve", fighting_style="kickboxing", weight_class="middleweight")
+<Fighters: Fighters object (26)>
+>>> Fighters.objects.create(name="Brandon Moreno", age=30, country="Mexico", gender="Male", blood="A+ve", fighting_style="Brazilian Jiu-Jitsu", weight_class="flyweight")
+<Fighters: Fighters object (27)>
+>>> Fighters.objects.create(name="Manel Kape", age=30, country="Angola", gender="Male", blood="O+ve", fighting_style="Muay Thai", weight_class="flyweight")
+<Fighters: Fighters object (28)>
+>>> Fighters.objects.create(name="Petr Yan", age=31, country="Russia", gender="Male", blood="O+ve", fighting_style="boxing", weight_class="bantamweight")
+<Fighters: Fighters object (29)>
+>>> Fighters.objects.create(name="Song Yadong", age=26, country="China", gender="Male", blood="A+ve", fighting_style="kickboxing", weight_class="bantamweight")
+<Fighters: Fighters object (30)>
+>>> qs=Fighters.objects.get(id=21)
+>>> qs
+<Fighters: Fighters object (21)>
+>>> qs=Fighters.objects.get(id=18) 
+>>> qs
+<Fighters: Fighters object (18)>
+>>> qs=Fighters.objects.filter(weight_class=middleweight) 
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'middleweight' is not defined
+>>> qs=Fighters.objects.filter(weight_class="middleweight") 
+>>> qs
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (25)>, <Fighters: Fighters object (26)>]>
+>>> qs=Fighters.objects.filter(blood="A+ve")                
+>>> qs
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (5)>, <Fighters: Fighters object (10)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (20)>, <Fighters: Fighters object (27)>, <Fighters: Fighters object (30)>]>
+>>> qs=Fighters.objects.filter(age__gt=25)                  
+>>> qs
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (4)>, <Fighters: Fighters object (5)>, <Fighters: Fighters object (6)>, <Fighters: Fighters object (7)>, <Fighters: Fighters object (8)>, <Fighters: Fighters object (9)>, <Fighters: Fighters object (10)>, <Fighters: Fighters object (11)>, <Fighters: Fighters object (12)>, <Fighters: Fighters object (13)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (15)>, <Fighters: Fighters object (16)>, <Fighters: Fighters object (17)>, <Fighters: Fighters object (18)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (20)>, '...(remaining elements truncated)...']>
+>>> qs=Fighters.objects.filter(age__lt=40) 
+>>> qs
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (4)>, <Fighters: Fighters object (5)>, <Fighters: Fighters object (6)>, <Fighters: Fighters object (7)>, <Fighters: Fighters object (8)>, <Fighters: Fighters object (9)>, <Fighters: Fighters object (11)>, <Fighters: Fighters object (12)>, <Fighters: Fighters object (13)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (15)>, <Fighters: Fighters object (16)>, <Fighters: Fighters object (17)>, <Fighters: Fighters object (18)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (20)>, <Fighters: Fighters object (21)>, '...(remaining elements truncated)...']>
+>>> qs=Fighters.objects.all().exclude(weight_class="feather weight")
+>>> qs
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (4)>, <Fighters: Fighters object (5)>, <Fighters: Fighters object (6)>, <Fighters: Fighters object (7)>, <Fighters: Fighters object (8)>, <Fighters: Fighters object (9)>, <Fighters: Fighters object (10)>, <Fighters: Fighters object (11)>, <Fighters: Fighters object (12)>, <Fighters: Fighters object (13)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (15)>, <Fighters: Fighters object (16)>, <Fighters: Fighters object (17)>, <Fighters: Fighters object (18)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (20)>, '...(remaining elements truncated)...']>
+>>> Fighters.objects.all().exclude(weight_class="feather weight")    
+<QuerySet [<Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (4)>, <Fighters: Fighters object (5)>, <Fighters: Fighters object (6)>, <Fighters: Fighters object (7)>, <Fighters: Fighters object (8)>, <Fighters: Fighters object (9)>, <Fighters: Fighters object (10)>, <Fighters: Fighters object (11)>, <Fighters: Fighters object (12)>, <Fighters: Fighters object (13)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (15)>, <Fighters: Fighters object (16)>, <Fighters: Fighters object (17)>, <Fighters: Fighters object (18)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (20)>, '...(remaining elements truncated)...']>
+>>>
+
+from details.models import Fighters
+>>> Fighters.objects.filter(id=8).update(country="Brazil")
+
+qs=Fighters.objects.all().order_by('age') 
+>>> qs
+<QuerySet [<Fighters: Fighters object (30)>, <Fighters: Fighters object (18)>, <Fighters: Fighters object (6)>, <Fighters: Fighters object (19)>, <Fighters: Fighters object (23)>, <Fighters: Fighters object (27)>, <Fighters: Fighters object (28)>, <Fighters: Fighters object (14)>, <Fighters: Fighters object (29)>, <Fighters: Fighters object (3)>, <Fighters: Fighters object (13)>, <Fighters: Fighters object (21)>, <Fighters: Fighters object (22)>, <Fighters: Fighters object (1)>, <Fighters: Fighters object (2)>, <Fighters: Fighters object (11)>, <Fighters: Fighters object (20)>, <Fighters: Fighters object (26)>, <Fighters: Fighters object (4)>, <Fighters: Fighters object (15)>, '...(remaining elements truncated)...']>
+
+qs=Fighters.objects.all().values('weight_class')   
+>>> qs
+<QuerySet [{'weight_class': 'middleweight'}, {'weight_class': 'middleweight'}, {'weight_class': 'middleweight'}, {'weight_class': 'heavyweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'lightweight'}, {'weight_class': 'bantamweight'}, {'weight_class': 'bantamweight'}, {'weight_class': 'bantamweight'}, {'weight_class': 'heavyweight'}, {'weight_class': 'heavyweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'lightweight'}, {'weight_class': 'lightweight'}, {'weight_class': 'heavyweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'lightweight'}, '...(remaining elements truncated)...']>
+>>>
+
+ qs=Fighters.objects.all().values('weight_class').distinct()
+>>> qs
+<QuerySet [{'weight_class': 'middleweight'}, {'weight_class': 'heavyweight'}, {'weight_class': 'featherweight'}, {'weight_class': 'lightweight'}, {'weight_class': 'bantamweight'}, {'weight_class': 'flyweight'}]>  
+>>>
