@@ -16,7 +16,3 @@ The following dependencies are used in this project:
 - **sqlparse**: `0.5.1`
 - **tzdata**: `2024.2`
 
-## Setup Instructions
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
